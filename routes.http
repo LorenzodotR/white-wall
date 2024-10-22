@@ -1,0 +1,47 @@
+//GetAllContacts
+# POST https://msging.net/commands
+# Content-Type: application/json
+# Authorization: Key d3cxOmttVXlxbEg2bnhheFBDbXlzT1dQ
+
+# {
+#   "id": "{{$guid}}",
+#   "to": "postmaster@crm.msging.net",
+#   "method": "get",
+#   "uri": "/contacts?$skip=0&$take=3"
+# }
+
+//GetAllContactsMessages
+POST https://msging.net/commands
+Content-Type: application/json
+Authorization: Key d3cxOmttVXlxbEg2bnhheFBDbXlzT1dQ
+
+{
+   "id": "{{$guid}}",
+   "method": "get",
+   "uri": "/threads/d29d2500-dd02-4618-b64d-2df6965d8c31.ww1@0mn.io?refreshExpiredMedia=true"
+}
+
+
+//---------------------------------------------------------------------------------------
+# //GetContactInfo
+# POST https://msging.net/commands
+# Content-Type: application/json
+# Authorization: Key d3cxOmttVXlxbEg2bnhheFBDbXlzT1dQ 
+
+# {
+#   "id": "f139bff9-f2ef-42bb-97de-d26b6806ee94",
+#   "to": "postmaster@crm.msging.net",
+#   "method": "get",
+#   "uri": "/contacts/d29d2500-dd02-4618-b64d-2df6965d8c31.ww1@0mn.io"
+# }
+
+//GetlastContactMessage
+# POST  https://msging.net/commands
+# Content-Type: application/json
+# Authorization: Key d3cxOmttVXlxbEg2bnhheFBDbXlzT1dQ
+
+# {  
+#   "id": "d29d2500-dd02-4618-b64d-2df6965d8c31.ww1@0mn.io",
+#   "method": "get",
+#   "uri": "/threads?refreshExpiredMedia=true"
+# }
